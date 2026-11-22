@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Melanie Roberts' Digital Content Portfolio</title>
+<meta name="description" content="Projects I've worked on with my employers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --purple: #734e7a;
+    --purple-line: #85608c;
+    --purple-light: #e8d9ea;
+    --rule: #dbbddf;
+    --icon: #353b55;
+    --text: #4a4a4a;
+    --muted: #666;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #fff;
+    color: var(--text);
+    font: 16px/1.6 Roboto, Arial, Helvetica, sans-serif;
+  }
+  .cond { font-family: "Roboto Condensed", "Arial Narrow", Arial, sans-serif; }
+  .skip { position: absolute; left: -999px; }
+  .skip:focus { left: 1rem; top: 1rem; background: #fff; padding: .5rem 1rem; z-index: 10; }
+  :focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+  main :focus-visible { outline-color: var(--purple); }
+
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 1.5rem; }
+
+  .topbar { background: var(--purple); border-bottom: 1px solid var(--purple-line); }
+  .topbar .wrap { display: flex; justify-content: flex-end; gap: 2.5rem; padding-top: .75rem; padding-bottom: .75rem; }
+  .topbar a {
+    display: grid; place-items: center;
+    width: 40px; height: 40px; border-radius: 50%;
+    background: var(--icon);
+  }
+  .topbar svg { width: 22px; height: 22px; fill: #fff; }
+
+  .hero { background: var(--purple); padding: 3rem 0 3.25rem; }
+  h1 {
+    margin: 0;
+    font-weight: 300;
+    font-size: clamp(1.9rem, 4vw, 2.5rem);
+    line-height: 1.2;
+    color: var(--purple-light);
+  }
+  .hero hr { width: 4rem; border: 0; border-top: 1px solid var(--rule); margin: 1.5rem 0 0; }
+
+  .intro { margin: 1.25rem 0 0; max-width: 40rem; font-size: 1.1rem; line-height: 1.5; color: var(--purple-light); }
+
+  main { padding: 3rem 0 1rem; }
+  .project {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2.5rem;
+    align-items: start;
+    padding: 1.5rem 0 3.5rem;
+  }
+  .project.flip { grid-template-columns: 2fr 1fr; }
+  .project.flip .text { order: 2; }
+  .num { display: block; font-size: .8rem; color: var(--muted); line-height: 1.2; }
+  h2 { margin: .15rem 0 1rem; font-weight: 400; font-size: 1.5rem; line-height: 1.2; color: #444; }
+  .text p { margin: 0 0 1rem; font-size: .95rem; color: var(--muted); }
+  .tags { list-style: none; padding: 0; margin: .5rem 0 0; display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; }
+  .tags li { display: flex; align-items: center; gap: .35rem; font-size: .95rem; color: #333; }
+  .tags svg { width: 16px; height: 16px; fill: #aaa; flex: none; }
+  .shot { margin: 0; }
+  .shot img { display: block; width: 100%; height: auto; }
+
+  footer { background: var(--purple); color: var(--purple-light); padding: 1.25rem 0; font-size: .75rem; }
+  footer p { margin: 0; }
+
+  @media (max-width: 760px) {
+    .project, .project.flip { grid-template-columns: 1fr; gap: 1.5rem; padding-bottom: 2.5rem; }
+    .project.flip .text { order: 0; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#work">Skip to projects</a>
+
+<div class="topbar">
+  <nav class="wrap" aria-label="Contact">
+    <a href="mailto:melaniearoberts@gmail.com" aria-label="Send email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5h20v2.2l-10 6.3L2 7.2zm0 4.6 10 6.3 10-6.3V19H2z"/></svg></a>
+    <a href="https://www.linkedin.com/in/melaniearoberts" aria-label="LinkedIn profile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 9h3.7v11H4.5zM6.3 3.5a2.1 2.1 0 1 1 0 4.2 2.1 2.1 0 0 1 0-4.2zM10 9h3.5v1.5c.6-1 1.8-1.8 3.600-1.800 3.400 0 3.900 2.200 3.900 5V20h-3.700v-5.500c0-1.300 0-2.800-1.800-2.800s-2 1.300-2 2.700V20H10z"/></svg></a>
+  </nav>
+</div>
+<header class="hero">
+  <div class="wrap">
+    <h1 class="cond">Melanie Roberts' Digital Content Portfolio</h1>
+    <hr>
+    <p class="intro">Web and email developer building accessible, responsive pages and personalized emails, 2011&ndash;present.</p>
+  </div>
+</header>
+
+<main id="work" class="wrap">
+
+  <article class="project">
+    <div class="text">
+      <span class="num cond">001</span>
+      <h2 class="cond">AORN (Association of periOperative Registered Nurses) Mission Partner page</h2>
+      <p>Project Manager wanted to create a page for a new partner program. They provided the text and images. For this project my task was to work with the Creative Director on confirming best practices for design and code a responsive page within the templates in Sitefinity.</p>
+      <ul class="tags cond"><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 3a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.5.7L15 8l-3 6.3a2 2 0 0 1-1.5.7H3a2 2 0 0 1-2-2z"/></svg>Web Design</li><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 3a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.5.7L15 8l-3 6.3a2 2 0 0 1-1.5.7H3a2 2 0 0 1-2-2z"/></svg>Responsive coding</li></ul>
+    </div>
+    <figure class="shot"><img src="images/AORN_Mission_Partner_Page.png" alt="Screenshot of webpage for AORN's Mission Partner Program." loading="lazy"></figure>
+  </article>
+
+  <article class="project flip">
+    <div class="text">
+      <span class="num cond">002</span>
+      <h2 class="cond">AORN Expo Philadelphia info page</h2>
+      <p>Worked with the Expo Project Manager to update the page with info for attendees on the city for the 2027 Expo. They provided the text and images. For this project my task was to work with the Creative Director on confirming best practices for design and code a responsive page within the templates in Sitefinity.</p>
+      <ul class="tags cond"><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 3a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.5.7L15 8l-3 6.3a2 2 0 0 1-1.5.7H3a2 2 0 0 1-2-2z"/></svg>Responsive coding</li><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 3a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.5.7L15 8l-3 6.3a2 2 0 0 1-1.5.7H3a2 2 0 0 1-2-2z"/></svg>Best practices</li></ul>
+    </div>
+    <figure class="shot"><img src="images/AORN_Expo_PhillyPage.png" alt="Screenshot of webpage for AORN's Expo in Philadelphia." loading="lazy"></figure>
+  </article>
+
+  <article class="project">
+    <div class="text">
+      <span class="num cond">003</span>
+      <h2 class="cond">Syntegrity Homepage update</h2>
+      <p>Worked with the Product Marketing Manager for Syntegrity to update their homepage. They provided the text and images. For this project my task was to work with the Creative Director on confirming best practices for design and code a responsive page within the templates in Sitefinity.</p>
+      <p>During coding the headers for the 4 blocks of text weren't accessible in the mockup, so I worked with the team to keep headers coded correctly.</p>
+      <ul class="tags cond"><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 3a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.5.7L15 8l-3 6.3a2 2 0 0 1-1.5.7H3a2 2 0 0 1-2-2z"/></svg>Best Practices</li><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 3a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.5.7L15 8l-3 6.3a2 2 0 0 1-1.5.7H3a2 2 0 0 1-2-2z"/></svg>Responsive coding</li></ul>
+    </div>
+    <figure class="shot"><img src="images/AORN_Syntegrity_Homepage.png" alt="Screenshot of homepage for AORN Syntegrity." loading="lazy"></figure>
+  </article>
+
+  <article class="project flip">
+    <div class="text">
+      <span class="num cond">004</span>
+      <h2 class="cond">Nurses page</h2>
+      <p>Requester wanted to create a page to share values and statistics for nursing program at their hospital facility. They provided the text and images. For this project my task was to design and code a responsive page, with as much text pulled from the images provided as possible to keep in line with accessibility standards.</p>
+      <ul class="tags cond"><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 3a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.5.7L15 8l-3 6.3a2 2 0 0 1-1.5.7H3a2 2 0 0 1-2-2z"/></svg>Web design</li><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 3a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.5.7L15 8l-3 6.3a2 2 0 0 1-1.5.7H3a2 2 0 0 1-2-2z"/></svg>Responsive coding</li></ul>
+    </div>
+    <figure class="shot"><img src="images/ForNurses_page.png" alt="Screenshot of For Nurses page on HCA (Hospital Corporation of America) Healthcare site." loading="lazy"></figure>
+  </article>
+
+  <article class="project">
+    <div class="text">
+      <span class="num cond">005</span>
+      <h2 class="cond">Join Nursing page</h2>
+      <p>The requester sent in a basic layout with limited image sizing for responsive images. Because of that, this was built more with responsive viewing in mind.</p>
+      <ul class="tags cond"><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 3a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.5.7L15 8l-3 6.3a2 2 0 0 1-1.5.7H3a2 2 0 0 1-2-2z"/></svg>Responsive coding</li></ul>
+    </div>
+    <figure class="shot"><img src="images/JoinNursing_page.png" alt="Screenshot of Join Methodist Healthcare Nursing page on HCA Healthcare site." loading="lazy"></figure>
+  </article>
+
+  <article class="project flip">
+    <div class="text">
+      <span class="num cond">006</span>
+      <h2 class="cond">Welcome email</h2>
+      <p>Personalized email utilizing Javascript that went out to new vehicle owners depending on which vehicle they had just purchased. The second image would show something different based on what app capabilities came with your vehicle. The lineup of cars would also change out depending on what type of car had been purchased. For example: more SUVs (Sport Utility Vehicles) showed up first, then trucks, if you purchased an SUV.</p>
+      <ul class="tags cond"><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 3a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.5.7L15 8l-3 6.3a2 2 0 0 1-1.5.7H3a2 2 0 0 1-2-2z"/></svg>Responsive email coding</li><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 3a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.5.7L15 8l-3 6.3a2 2 0 0 1-1.5.7H3a2 2 0 0 1-2-2z"/></svg>Javascript</li></ul>
+    </div>
+    <figure class="shot"><img src="images/Welcome_email.png" alt="Screenshot of GMC (General Motors Company) welcome email." loading="lazy"></figure>
+  </article>
+
+  <article class="project">
+    <div class="text">
+      <span class="num cond">007</span>
+      <h2 class="cond">Email utilizing images and pulled out text</h2>
+      <p>Client sent over email assets that were mostly all images, but due to the limitations of email coding and best practices it was better to pull out the text from the images. For this email I sliced the images of the graph and used solid color backgrounds and text to fill out the graph, spending extra time running the code through Quality Assurance to make sure the graph lined up in the most popular email platforms.</p>
+      <ul class="tags cond"><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 3a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.5.7L15 8l-3 6.3a2 2 0 0 1-1.5.7H3a2 2 0 0 1-2-2z"/></svg>Responsive email coding</li></ul>
+    </div>
+    <figure class="shot"><img src="images/SallieMae_email.png" alt="Screenshot of email that includes graph and information on college savings for client." loading="lazy"></figure>
+  </article>
+
+</main>
+
+<footer><div class="wrap">
+  <p>Work above coded by Melanie Roberts on their respective websites/email from 2011-present.</p>
+</div></footer>
+</body>
+</html>
